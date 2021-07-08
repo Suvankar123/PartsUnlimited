@@ -18,7 +18,8 @@ steps:
   inputs:
     packageType: 'sdk'
     useGlobalJson: true
-- task: UseDotNet@2
+steps:
+- task: InstallDotNetSDK
   displayName: 'Install .NET 5 SDK'
   inputs:
     packageType: 'sdk'
